@@ -13,7 +13,7 @@ bool check_from_position(const string &target, const string &substr, int pos_tar
         return false;
     }
     
-    // TODO If the current characters match, check the next characters, else rutrun f alse
+    //If the current characters match, check the next characters, else retrun false
     if (target[pos_target] == substr[pos_substr]){
         return check_from_position(target, substr, pos_target + 1, pos_substr + 1);
     }
